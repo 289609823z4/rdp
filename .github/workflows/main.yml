@@ -1,4 +1,4 @@
-`name: CI
+name: CI
 
 on: [push, workflow_dispatch]
 
@@ -35,4 +35,4 @@ jobs:
       run: .\ngrok.exe tcp 3389
       
     - name: Output ngrok Logs (for debugging)
-      run: Get-Content ngrok.log -Tail 100`
+      run: Get-Content ngrok.log -Tail 100
